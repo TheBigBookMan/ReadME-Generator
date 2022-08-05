@@ -1,7 +1,7 @@
 // // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdownGenerate = require('./generateMarkdown')
+const markdownGenerate = require('./generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
@@ -16,7 +16,6 @@ const questions = [
     "What does the user need to know about using the repo?", 
     "What does the user need to know about contributing to the repo?"];
 
-//ADD IN THE OBJECT WITH INQUIRER QUESTIONS AND MAYBE HAEV TO PUT IN THE ARRAY ABOVE AS ARGUEMENTS FOR THE QUESTIONS? ALSO ADD IN THE DEFAULT REPONSES FOR  COUPLE QUESTIONS ---- REFER TO NAV VIDEO
 
 inquirer.prompt([{
     type: "input",
@@ -57,12 +56,17 @@ inquirer.prompt([{
     type: "input",
     message: questions[8],
     name: "contributing-repo"
-}
-
-])
-.then((answers) => {
-    console.log(answers)
+}])
+.then((data) => {
+    var data = data;
+    module.exports = data
+    console.log(module)
 })
+
+
+    // console.log(module.exports)
+
+// export the license to the generatemarkdown file to then be used in the functions
 
 
 
