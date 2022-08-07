@@ -28,11 +28,11 @@ inquirer.prompt([{
 }, {
     type: "input",
     message: questions[2],
-    name: "project-name"
+    name: "title"
 }, {
     type: "input", 
     message: questions[3],
-    name: "project-description"
+    name: "description"
 }, {
     type: "list", 
     message: questions[4],
@@ -51,17 +51,18 @@ inquirer.prompt([{
 }, {
     type: "input",
     message: questions[7],
-    name: "using-repo"
+    name: "usage"
 }, {
     type: "input",
     message: questions[8],
-    name: "contributing-repo"
+    name: "contributing"
 }])
-.then((data) => {
+.then(data => {
     var data = data;
-    module.exports = data
-    console.log(module)
+    module.exports = {data}
+    // console.log(module)
 })
+
 
 
     // console.log(module.exports)
