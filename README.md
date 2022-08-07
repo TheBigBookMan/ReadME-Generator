@@ -20,9 +20,9 @@ ADD IN THE DESCIRPTION TEMPLATE HERE
 
 ## Installation
 To install necessary dependencies, run the following command:
-```
+````
 ADD THE INETALL NECESSARY DEPENCIES TEMPLATE IN CODE BLOCK HERE
-```
+````
 
 ## Usage
 INPUT THE TEMPATE FOR USAGE HERE
@@ -34,9 +34,11 @@ This project is licensed under the INPUT TEMPLATE NAME HERE license.
 INPUT THE CONTRIUTING TEMPLATE RIGHTH ERE
 
 ## Tests
-```
+````
 INPUT THE TESTS TEMPLATE HERE
-```
+````
 
 ## Questions
 If you have any questions about the repo, open an issue or email me directly from my email: ADD IN EMAIL TEMPLATE HERE. Check out some of my other work at my GitHub: ADD IN GITHUB LINK TEMPLATE HERE.
+
+[${data.github}](https://github.com/)
