@@ -1,9 +1,9 @@
-// // TODO: Include packages needed for this application
+// Packages required
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./Develop/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
     "What is your GitHub username?", 
     "What is your email address?", 
@@ -61,18 +61,12 @@ const userPrompt = () => {
     })
 }
 
-    // console.log(generateMarkdown)
-
 // export the license to the generatemarkdown file to then be used in the functions
 const writeFile = (fileName, data) => {
     fs.writeFile(fileName, generateMarkdown(data), (err) => err ? console.log(err) : console.log("Created README.md successfully!")
     );
 }
 
-
-// TODO: Create a function to write README file
-// WILL JUST BE A REGULAR CREATEFILE WITH THE FS MODULE AND LINKING THE MARKDOWNGENERATE FUNCTION
-// function writeToFile(fileName, data) {}
 
 // // TODO: Create a function to initialize app
 function init() {

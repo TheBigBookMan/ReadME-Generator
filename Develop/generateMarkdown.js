@@ -1,7 +1,19 @@
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if(license === "None") {
+    return;
+  } else if(license === "MIT") {
+    return `![license: MIT](https://img.shields.io/badge/license-MIT-red)`;
+  } else if(license === "Apache 2.0") {
+    return `![license: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-green)`;
+  } else if(license === "GPL 3.0") {
+    return `![license: GPL 3.0](https://img.shields.io/badge/license-GPL%203.0-blue)`;
+  } else if(license === "BSD 3") {
+    return `![license: BSD 3](https://img.shields.io/badge/license-BSD%203-orange)`;
+  }
+}
 
 
 // TODO: Create a function that returns the license link
@@ -17,7 +29,7 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ![Github license](INPUT THE LINK FOR IMAGE FOR LICENSE HERE THROUGH THOSE FUNCTIONS)
+  ${renderLicenseBadge(data.license)}
   
   ## Description
   ${data.description}
