@@ -1,10 +1,3 @@
-// import the data answers to this page from index and then it is used throughout the functions here to then add it in the readme template 
-const {data} = require('./index');
-console.log("first")
-console.log(data)
-console.log("secondt")
-
-
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -44,9 +37,9 @@ function generateMarkdown(data) {
   
   ## Installation
   To install necessary dependencies, run the following command:
-  ````
+  \`\`\`\`
   ${data.dependencies}
-  ````
+  \`\`\`\`
   
   ## Usage
   ${data.usage}
@@ -59,15 +52,13 @@ function generateMarkdown(data) {
   ${data.contributing}
   
   ## Tests
-  ````
+  \`\`\`\`
   ${data.tests}
-  ````
+  \`\`\`\`
   
   ## Questions
   If you have any questions about the repo, open an issue or email me directly from my email: [${data.email}](${data.email}). Check out some of my other work at my GitHub: [${data.github}](${data.github}).
 `;
 }
-
-// TEST IF THE README FILE WORKS WITH JUST PLACEHOLDER INFO IN THE SPOTS
 
 module.exports = generateMarkdown;
