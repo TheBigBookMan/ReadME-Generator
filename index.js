@@ -65,7 +65,7 @@ const userPrompt = () => {
 
 // export the license to the generatemarkdown file to then be used in the functions
 const writeFile = (fileName, data) => {
-    fs.writeFile(fileName, generateMarkdown(data), (err) => err ? console.log(err) : console.log("Successfully created README.md")
+    fs.writeFile(fileName, generateMarkdown(data), (err) => err ? console.log(err) : console.log("Created README.md successfully!")
     );
 }
 
