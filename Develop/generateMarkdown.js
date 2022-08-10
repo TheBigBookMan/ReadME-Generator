@@ -12,10 +12,9 @@ function renderLicenseBadge(license) {
   } else if(license === "BSD 3") {
     return `![license: BSD 3](https://img.shields.io/badge/license-BSD%203-orange)`;
   }
-}
+};
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that creates a link to the license
 function renderLicenseLink(license) {
   if(license === "None") {
     return "no licenses";
@@ -28,14 +27,9 @@ function renderLicenseLink(license) {
   } else if(license === "BSD 3") {
     return `[license: BSD 3](https://opensource.org/licenses/BSD-3-Clause)`;
   }
-}
+};
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-//WILL JUST BE TEMPLATE INFO, DO IT IN PROPER README FILE AND GET IT LOOKING GOOD
-// TODO: Create a function to generate markdown for README
+// Function that creates a markdown template for the README file
 function generateMarkdown(data) {
   return `
   # ${data.title}
@@ -82,4 +76,5 @@ function generateMarkdown(data) {
 `;
 }
 
+// Exporting the markdown template to exports
 module.exports = generateMarkdown;

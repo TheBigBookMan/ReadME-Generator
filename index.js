@@ -15,6 +15,7 @@ const questions = [
     "What does the user need to know about using the repo?", 
     "What does the user need to know about contributing to the repo?"];
 
+// Function that prompts the user with questions to make the README file
 const userPrompt = () => {
     return inquirer.prompt([{
         type: "input",
@@ -59,18 +60,18 @@ const userPrompt = () => {
     .then((data) => {
         writeFile("README.md", data);
     })
-}
+};
 
-// export the license to the generatemarkdown file to then be used in the functions
+// Function that takes in the file name and data from the questions and puts them into the generateMarkdown file from other module and creates a README file
 const writeFile = (fileName, data) => {
     fs.writeFile(fileName, generateMarkdown(data), (err) => err ? console.log(err) : console.log("Created README.md successfully!")
     );
-}
+};
 
-
-// // TODO: Create a function to initialize app
+// Initialization function
 function init() {
-    userPrompt()
+    userPrompt();
 }
-// // // Function call to initialize app
+
+// Call to initialize app
 init();
