@@ -21,7 +21,7 @@ A couple of questions are asking for what specific command line prompts will be 
 Once the questions have been answered, the README file will be generated matching the select criteria within their folder chosen. The user can then continue to manually add to it within their own IDE.
 
 ## Sample README
-Please find attached in the repository the sample README file for a sample repository. It is titled: README_SAMPLE.md
+Please find attached in the repository the sample README file for a sample repository created by this application. It is titled: README_SAMPLE.md
 
 ## GitHub Repository
 [https://github.com/TheBigBookMan/ReadME-Generator](https://github.com/TheBigBookMan/ReadME-Generator)
